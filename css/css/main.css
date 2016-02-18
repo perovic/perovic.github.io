@@ -56,7 +56,7 @@ section {
 }*/
 
 .bg {
-  background: url('../../res/img/stanford_background.jpg') no-repeat center center;
+  background: url('../../res/img/stanford-background.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
   height: 700px; /*same height as jumbotron */
@@ -178,6 +178,19 @@ section {
 .blockquote-reverse p i {
   color: #aaa;
   margin-right: 5px;
+}
+
+#expertise a {
+  color: #D2C295;
+}
+
+.uni-title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.company-title {
+  font-weight: bold;
 }
 
 #footer {
