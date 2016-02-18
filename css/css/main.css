@@ -88,6 +88,11 @@ section {
 
 .jumbotron a {
   display: block;
+  color: white;
+  text-shadow: black 1px 1px 1px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .jumbotron a:hover {
@@ -95,24 +100,14 @@ section {
 }
 
 .jumbotron .resume {
-  display: block;
   background-color: #B6B1A9;
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 0 auto;
   width: 100px;
 }
 
 .jumbotron .learn-more {
-  display: block;
   background-color: #DAD7CB;
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 0 auto;
   margin-top: 20px;
-  width: 200px;
+  width: 220px;
 }
 
 .jumbotron img {
@@ -136,23 +131,21 @@ section {
   margin-top: 20px;
 }
 
-.name {
-  font-size: 55px;
+.title {
+  display: block;
+  font-size: 60px;
+}
+
+.centered {
+  text-align: center;
 }
 
 .description {
   font-size: 22px;
 }
 
-.title {
+.center34 {
   display: block;
-  font-size: 60px;
-  text-align: center;
-}
-
-.subtitle {
-  display: block;
-  font-size: 22px;
   margin: 0 auto;
   width: 75%;
 }
@@ -191,6 +184,7 @@ section {
 
 .company-title {
   font-weight: bold;
+  font-size: 17px;
 }
 
 #footer {
@@ -199,7 +193,7 @@ section {
 }
 
 #footer p {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #footer ul {
