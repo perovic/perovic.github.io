@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: Avenir;
-  src: url(../fonts/avenir.otf) format(opentype);
+  src: url(../fonts/avenir.otf) format('opentype');
+  src: url(../fonts/avenir.woff) format('woff');
 }
 
 
@@ -81,9 +82,15 @@ section {
 
 .jumbotron .jumbo-name {
   font-size: 70px;
-  color: #8C1515;
+  color: #8C1515;/*
  -webkit-text-stroke-width: 1px;
- -webkit-text-stroke-color: white;
+ -webkit-text-stroke-color: white;*/
+ text-shadow:
+   -1px -1px 0 white,
+    1px -1px 0 white,
+   -1px  1px 0 white,
+    1px  1px 0 white,
+    2px  2px 1px black;
 }
 
 .jumbotron a {
@@ -107,7 +114,7 @@ section {
 .jumbotron .learn-more {
   background-color: #DAD7CB;
   margin-top: 20px;
-  width: 220px;
+  width: 240px;
 }
 
 .jumbotron img {
