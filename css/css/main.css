@@ -184,6 +184,11 @@ section {
   color: #D2C295;
 }
 
+#expertise img {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 .uni-title {
   font-weight: bold;
   font-size: 17px;
