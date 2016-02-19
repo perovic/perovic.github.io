@@ -225,6 +225,10 @@ section {
   color: white;
   text-decoration: none;
 }
+#footer ul li a:hover {
+  color: #B3995D;
+  text-decoration: none;
+}
 
 
 /*********************************/
