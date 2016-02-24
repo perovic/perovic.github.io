@@ -163,10 +163,33 @@ section {
   font-size: 22px;
 }
 
-.center34 {
+.middle34 {
   display: block;
   margin: 10px auto 20px auto;
   width: 75%;
+}
+
+.showSmall {
+  display: none;
+}
+
+.hideSmall {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .smallCentered {
+      text-align: center;
+    }
+    .smallFullWidth {
+      width: 100%;
+    }
+    .showSmall {
+      display: inline-block;
+    }
+    .hideSmall {
+      display: none;
+    }
 }
 
 .inbetween {
