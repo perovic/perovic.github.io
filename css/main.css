@@ -43,21 +43,17 @@ section {
 .navbar-default {
   display: none;
 }
-
 .navbar-nav {
   font-size: 18px;
 }
-
 .navbar-toggle {
   margin: 5px 10px;
 }
-
 .navbar>.container .navbar-brand {
   margin-left: 0px;
   padding: 15px 0px;
   font-weight: bold;
 }
-
 .navbar-default img {
   max-height: 50px;
   padding: 5px;
@@ -69,7 +65,7 @@ section {
 }*/
 
 .bg {
-  background: url('../../res/img/stanford-background.jpg') no-repeat center center;
+  background: url('../res/img/stanford-background.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
   height: 700px; /*same height as jumbotron */
@@ -91,7 +87,15 @@ section {
   border-style: solid;
   border-color: #4D4F53;
 }
-
+.jumbotron img {
+  margin: 0 auto 0 auto;
+  max-height: 400px;
+  border: 7px;
+  border-style: solid;
+  border-color: #DAD7CB;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
 .jumbotron .jumbo-name {
   font-size: 70px;
   color: #8C1515;/*
@@ -104,7 +108,27 @@ section {
     1px  1px 0 white,
     2px  2px 1px black;
 }
-
+.jumbotron ul {
+  display: block;
+  /*margin: 0 auto;*/
+  padding: 0;
+  font-size: 20px;
+}
+.jumbotron ul li {
+  display: inline;
+  margin: 0 20px;
+  /*color: #aaa;*/
+}
+.jumbotron ul li a {
+  display: inline;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.jumbotron ul li a:hover {
+  color: #B3995D;
+  text-decoration: none;
+}
 .jumbotron a {
   display: block;
   color: white;
@@ -112,31 +136,19 @@ section {
   font-size: 20px;
   border-radius: 10px;
   margin: 0 auto;
-}
-
-.jumbotron a:hover {
   text-decoration: none;
 }
-
+.jumbotron a:hover, a:active, a:visited {
+  text-decoration: none;
+}
 .jumbotron .resume {
   background-color: #B6B1A9;
   width: 100px;
+  margin-bottom: 10px;
 }
-
 .jumbotron .learn-more {
   background-color: #DAD7CB;
-  margin-top: 20px;
   width: 240px;
-}
-
-.jumbotron img {
-  margin: 0 auto 0 auto;
-  max-height: 400px;
-  border: 7px;
-  border-style: solid;
-  border-color: #DAD7CB;
-  border-radius: 50%;
-  margin-bottom: 15px;
 }
 
 .image-bordered {
@@ -172,7 +184,6 @@ section {
 .showSmall {
   display: none;
 }
-
 .hideSmall {
   display: inline-block;
 }
@@ -205,11 +216,9 @@ section {
   border-color: #aaa;
   margin: 0 auto;
 }
-
 .blockquote-reverse p {
   font-size: 22px;
 }
-
 .blockquote-reverse p i {
   color: #aaa;
   margin-right: 5px;
@@ -218,7 +227,6 @@ section {
 #expertise a {
   color: #D2C295;
 }
-
 #expertise img {
   margin-top: 5px;
   margin-bottom: 10px;
@@ -238,24 +246,20 @@ section {
   text-align: center;
   background-color: #8C1515;
 }
-
 #footer p {
   font-size: 22px;
 }
-
 #footer ul {
   display: block;
   margin: 0 auto;
   padding: 0;
   font-size: 30px;
 }
-
 #footer ul li {
   display: inline;
   margin: 0 20px;
   /*color: #aaa;*/
 }
-
 #footer ul li a {
   color: white;
   text-decoration: none;
@@ -264,7 +268,6 @@ section {
   color: #B3995D;
   text-decoration: none;
 }
-
 
 /*********************************/
 /* Insert Custom/New CSS Styling */
