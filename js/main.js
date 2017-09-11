@@ -8,18 +8,18 @@ $(window).scroll(function(){
 
 $(document).ready(function() {
 
-  // Init the grid for side-projects.
-  Grid.init();
+  // // Init the grid for side-projects.
+  // Grid.init();
 
   // Init WOW for awesome scroll animations.
   new WOW().init();
 
-  // Init text rotator for cool text display.
-  $(".rotate").textrotator({
-    animation: "dissolve",
-    separator: ",",
-    speed: 2000
-  });
+  // // Init text rotator for cool text display.
+  // $(".rotate").textrotator({
+  //   animation: "dissolve",
+  //   separator: ",",
+  //   speed: 2000
+  // });
 
   /* This click listener allows the user to scroll to different parts of the page
    * using the navbar by attaching ids to anchors throughout the page.
