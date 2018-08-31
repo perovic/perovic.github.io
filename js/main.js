@@ -1,9 +1,20 @@
+// Navbar fade-in/out animation
 $(window).scroll(function(){
-  if($(window).scrollTop() > 500) {
+  if($(window).scrollTop() > 400) {
     $('.navbar-default').fadeIn(300);
   } else {
     $('.navbar-default').fadeOut(300);
   }
+});
+
+// Parallax scrolling of the jumbotron background
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight-0.8*scrolled) + 'px');
+}
+$(window).scroll(function(e){
+    parallax();
 });
 
 $(document).ready(function() {
@@ -14,13 +25,6 @@ $(document).ready(function() {
   // Init WOW for awesome scroll animations.
   new WOW().init();
 
-  // // Init text rotator for cool text display.
-  // $(".rotate").textrotator({
-  //   animation: "dissolve",
-  //   separator: ",",
-  //   speed: 2000
-  // });
-
   /* This click listener allows the user to scroll to different parts of the page
    * using the navbar by attaching ids to anchors throughout the page.
    */
@@ -28,20 +32,9 @@ $(document).ready(function() {
     e.preventDefault();
     var hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(this.hash).offset().top - 40
+      scrollTop: $(this.hash).offset().top
     }, 1000, function(){
       window.location.hash = hash;
     });
   });
-});
-
-// Parallax scrolling of the jumbotron background
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-0.8*scrolled) + 'px');
-}
-
-$(window).scroll(function(e){
-    parallax();
 });

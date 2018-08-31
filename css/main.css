@@ -20,14 +20,6 @@ html, body {
   font-family: 'Avenir', sans-serif;
 }
 
-body > .container {
-  text-align: center;
-}
-
-.container {
-  position: relative;
-}
-
 
 /************************/
 /* Provided CSS Styling */
@@ -60,10 +52,6 @@ section {
   margin-right: 10px;
 }
 
-/*.img-responsive {
-
-}*/
-
 .bg {
   background: url('../res/img/stanford-background.jpg') no-repeat center center;
   position: fixed;
@@ -76,10 +64,7 @@ section {
 
 .jumbotron {
   margin: 0;
-  /*background-color: #eee;*/
-  /*margin-bottom: 0px;*/
   height: 700px;
-  /*color: white;*/
   text-shadow: black 1px 1px 1px;
   background:transparent;
   text-align: center;
@@ -98,10 +83,8 @@ section {
 }
 .jumbotron .jumbo-name {
   font-size: 70px;
-  color: #8C1515;/*
- -webkit-text-stroke-width: 1px;
- -webkit-text-stroke-color: white;*/
- text-shadow:
+  color: #8C1515;
+  text-shadow:
    -1px -1px 0 white,
     1px -1px 0 white,
    -1px  1px 0 white,
@@ -110,14 +93,12 @@ section {
 }
 .jumbotron ul {
   display: block;
-  /*margin: 0 auto;*/
   padding: 0;
   font-size: 20px;
 }
 .jumbotron ul li {
   display: inline;
   margin: 0 20px;
-  /*color: #aaa;*/
 }
 .jumbotron ul li a {
   display: inline;
@@ -158,13 +139,9 @@ section {
   border-radius: 50%;
 }
 
-.experience {
-  margin-top: 20px;
-}
-
-.title {
-  display: block;
+.sectionTitle {
   font-size: 60px;
+  margin-top: 0;
 }
 
 .centered {
@@ -175,32 +152,26 @@ section {
   font-size: 22px;
 }
 
-.middle34 {
-  display: block;
-  margin: 10px auto 20px auto;
+.mdCentered75 {
+  margin: auto;
   width: 75%;
 }
 
-.showSmall {
+.smShow {
   display: none;
-}
-.hideSmall {
-  display: inline-block;
 }
 
 @media (max-width: 767px) {
-    .smallCentered {
-      text-align: center;
-    }
-    .smallFullWidth {
-      width: 100%;
-    }
-    .showSmall {
-      display: inline-block;
-    }
-    .hideSmall {
-      display: none;
-    }
+  .smCentered {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sm100 {
+    width: 100%;
+  }
+  .smShow {
+    display: inline-block;
+  }
 }
 
 .inbetween {
@@ -208,7 +179,7 @@ section {
   background-color: #D2C295;
   border-width: 7px 0px;
   border-style: solid;
-  border-color: #4D4F53;
+  border-color: #4D5357;
   color: #4D5357;
 }
 
@@ -227,46 +198,55 @@ section {
 #expertise a {
   color: #D2C295;
 }
-#expertise img {
-  margin-top: 5px;
-  margin-bottom: 10px;
+
+.eduItem {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.uni-title {
+.expItem {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.imgLogo {
+  border-radius: 3%;
+  margin: auto;
+  padding: 5%;
+  max-height: 200px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.uniTitle {
   font-weight: bold;
   font-size: 17px;
 }
 
-.company-title {
+.companyTitle {
   font-weight: bold;
   font-size: 17px;
 }
 
 #footer {
   text-align: center;
-  background-color: #8C1515;
 }
 #footer p {
   font-size: 22px;
 }
 #footer ul {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-size: 30px;
 }
 #footer ul li {
   display: inline;
   margin: 0 20px;
-  /*color: #aaa;*/
 }
 #footer ul li a {
   color: white;
-  text-decoration: none;
 }
 #footer ul li a:hover {
   color: #B3995D;
-  text-decoration: none;
 }
 
 /*********************************/
