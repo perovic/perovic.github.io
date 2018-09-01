@@ -11,12 +11,13 @@ $(window).scroll(function(){
 var jumboHeight = $('.jumbotron').outerHeight();
 function parallax(){
     var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-0.8*scrolled) + 'px');
+    $('.bg').css('height', (jumboHeight-0.8*scrolled)/jumboHeight*100 + '%');
 }
 $(window).scroll(function(e){
     parallax();
 });
 
+// Init after document load
 $(document).ready(function() {
 
   // // Init the grid for side-projects.
@@ -37,4 +38,12 @@ $(document).ready(function() {
       window.location.hash = hash;
     });
   });
+
+  // Hide the navbar dropdown menu which shows on small screens, after clicking a menu item
+  // Doing it through JS, as using CSS makes it collapse even on larger screens
+  $('.nav a').on('click', function(){
+    if($('.navbar-toggle').css('display')!='none'){
+      $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+    }
+});
 });
