@@ -35,16 +35,21 @@ section {
 .navbar-default {
   display: none;
 }
-.navbar-nav {
+.navbar-nav > li > a {
   font-size: 18px;
+  line-height: 100%;
+  margin: 1px auto;
 }
 .navbar-toggle {
-  margin: 5px 10px;
+  padding: 10px;
+  margin: 7px 10px;
+  line-height: 100%;
 }
 .navbar>.container .navbar-brand {
   margin-left: 0px;
-  padding: 15px 0px;
+  padding: 16px 0px;
   font-weight: bold;
+  line-height: 100%;
 }
 .navbar-default img {
   max-height: 50px;
