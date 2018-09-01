@@ -57,7 +57,7 @@ body, html {
 }
 
 
-.bg {
+/* .bg {
   background: url('../res/img/stanford-background.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
@@ -66,12 +66,17 @@ body, html {
   top:0;
   left:0;
   z-index: -1;
-}
+} */
 
 .jumbotron {
+  background-image: url("../res/img/stanford-background.jpg");
+  /* background-size: cover; */
+  /* background-position-y: -180px; */
+  background-position-x: center;
+  background-position-y: -427px;
+  /* background:transparent; */
   margin: 0;
   text-shadow: black 1px 1px 1px;
-  background:transparent;
   text-align: center;
   border-width: 0px 0px 7px 0px;
   border-style: solid;
