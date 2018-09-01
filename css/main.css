@@ -72,7 +72,7 @@ body, html {
   background-image: url("../res/img/stanford-background.jpg");
   background-attachment: fixed;
   background-position-x: center;
-  background-position-y: -427px;
+  background-position-y: -412px;
   /* background-size: cover; */
   /* background-position-y: -180px; */
 }
@@ -94,12 +94,14 @@ body, html {
 }
 .jumbotron img {
   margin: 0 auto 0 auto;
-  max-height: 400px;
+  max-height: 415px;
+  margin-bottom: 15px;
+}
+.imageBordered {
   border: 7px;
   border-style: solid;
   border-color: #DAD7CB;
   border-radius: 50%;
-  margin-bottom: 15px;
 }
 .jumbotron .jumbo-name {
   font-size: 70px;
@@ -152,11 +154,9 @@ body, html {
   width: 240px;
 }
 
-.image-bordered {
-  border: 7px;
-  border-style: solid;
-  border-color: #DAD7CB;
-  border-radius: 50%;
+#about img {
+  margin: 0 auto 0 auto;
+  max-height: 270px;
 }
 
 .sectionTitle {

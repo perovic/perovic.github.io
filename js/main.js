@@ -13,7 +13,7 @@ function parallaxScroll(){
   var scrolled = $(window).scrollTop();
   // $('.bg').css('top', (-0.8*scrolled) + 'px');
   if ($('.parallax').css('background-attachment')=='fixed') {
-    $('.parallax').css('background-position-y', -427-(0.8*scrolled) + 'px');
+    $('.parallax').css('background-position-y', -412-(0.8*scrolled) + 'px');
   }
 }
 $(window).scroll(function(e){
