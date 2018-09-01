@@ -190,7 +190,7 @@ body, html {
     width: 100%;
   }
   .smShow {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -229,9 +229,13 @@ body, html {
   padding-bottom: 15px;
 }
 
+.hrAfter {
+  border-color: #7B0000;
+}
+
 .imgLogo {
   border-radius: 3%;
-  margin: auto;
+  margin: 0 auto 10px auto;
   padding: 5%;
   max-height: 200px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
