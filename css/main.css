@@ -68,12 +68,22 @@ body, html {
   z-index: -1;
 } */
 
-.jumbotron {
+.parallax {
   background-image: url("../res/img/stanford-background.jpg");
-  /* background-size: cover; */
-  /* background-position-y: -180px; */
+  background-attachment: fixed;
   background-position-x: center;
   background-position-y: -427px;
+  /* background-size: cover; */
+  /* background-position-y: -180px; */
+}
+
+@media (max-width: 767px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.jumbotron {
   /* background:transparent; */
   margin: 0;
   text-shadow: black 1px 1px 1px;

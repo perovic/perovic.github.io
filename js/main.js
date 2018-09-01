@@ -9,15 +9,15 @@ $(window).scroll(function(){
 
 // Parallax scrolling of the jumbotron background
 // var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    // $('.bg').css('top', (-0.8*scrolled) + 'px');
-    $('.jumbotron').css('background-position-y', -427+(0.2*scrolled) + 'px');
+function parallaxScroll(){
+  var scrolled = $(window).scrollTop();
+  // $('.bg').css('top', (-0.8*scrolled) + 'px');
+  if ($('.parallax').css('background-attachment')=='fixed') {
+    $('.parallax').css('background-position-y', -427-(0.8*scrolled) + 'px');
+  }
 }
 $(window).scroll(function(e){
-  // if (window.innerWidth >= 768){
-    parallax();
-  // }
+  parallaxScroll();
 });
 
 // Init after document load
