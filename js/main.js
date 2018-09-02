@@ -1,9 +1,9 @@
 // Navbar fade-in/out animation
 $(window).scroll(function(){
-  if($(window).scrollTop() > 400) {
-    $('.navbar-default').fadeIn(300);
+  if($(window).scrollTop() > 420) {
+    $('.navbar').fadeIn(300);
   } else {
-    $('.navbar-default').fadeOut(300);
+    $('.navbar').fadeOut(300);
   }
 });
 
@@ -13,7 +13,7 @@ function parallaxScroll(){
   var scrolled = $(window).scrollTop();
   // $('.bg').css('top', (-0.8*scrolled) + 'px');
   if ($('.parallax').css('background-attachment')=='fixed') {
-    $('.parallax').css('background-position-y', -412-(0.8*scrolled) + 'px');
+    $('.parallax').css('background-position-y', -395-(0.5*scrolled) + 'px');
   }
 }
 $(window).scroll(function(e){
@@ -25,9 +25,6 @@ $(document).ready(function() {
 
   // // Init the grid for side-projects.
   // Grid.init();
-
-  // Init WOW for awesome scroll animations.
-  new WOW().init();
 
   /* This click listener allows the user to scroll to different parts of the page
    * using the navbar by attaching ids to anchors throughout the page.
@@ -43,10 +40,7 @@ $(document).ready(function() {
   });
 
   // Hide the navbar dropdown menu which shows on small screens, after clicking a menu item
-  // Doing it through JS, as using CSS makes it collapse even on larger screens
-  $('.nav a').on('click', function(){
-    if($('.navbar-toggle').css('display')!='none'){
-      $('.navbar-toggle').click(); //bootstrap 3.x by Richard
-    }
-});
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
 });

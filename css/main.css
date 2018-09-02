@@ -32,29 +32,38 @@ section {
   color: white;
 }
 
-.navbar-default {
+.navbar {
   display: none;
 }
-.navbar-nav > li > a {
+/* .navbar-nav > li > a {
   font-size: 18px;
   line-height: 100%;
   margin: 1px auto;
-}
-.navbar-toggle {
+} */
+/* .navbar-toggle {
   padding: 10px;
   margin: 7px 10px;
   line-height: 100%;
-}
-.navbar>.container .navbar-brand {
-  margin-left: 0px;
-  padding: 16px 0px;
+} */
+.navbar .navbar-brand {
   font-weight: bold;
-  line-height: 100%;
-}
-.navbar-default img {
-  max-height: 50px;
-  padding: 5px;
+  color: #777;
+  /* margin-left: 0px; */
+  /* padding: 16px 0px; */
+  /* line-height: 100%; */
+} 
+.navbar img {
+  /* width="30" height="30" class="d-inline-block align-top"*/
+  width: 30px;
+  display: inline-block;
+  vertical-align: top;
   margin-right: 10px;
+  /* border-width: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #777; */
+  /* max-height: 50px; */
+  /* padding: 5px; */
 }
 
 body, html {
@@ -75,22 +84,19 @@ body, html {
 
 .parallax {
   background-image: url("../res/img/stanford-background.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position-x: center;
-  background-position-y: -412px;
+  background-position-y: -395px;
+  /* background-position-y: -420px; */
   /* background-size: cover; */
   /* background-position-y: -180px; */
-}
-
-@media (max-width: 767px) {
-  .parallax {
-    background-attachment: scroll;
-  }
 }
 
 .jumbotron {
   /* background:transparent; */
   margin: 0;
+  /* padding: 20px 0; */
   text-shadow: black 1px 1px 1px;
   text-align: center;
   border-width: 0px 0px 7px 0px;
@@ -98,7 +104,6 @@ body, html {
   border-color: #4D4F53;
 }
 .jumbotron img {
-  margin: 0 auto 0 auto;
   max-height: 415px;
   margin-bottom: 15px;
 }
@@ -119,9 +124,7 @@ body, html {
     2px  2px 1px black;
 }
 .jumbotron ul {
-  display: block;
-  padding: 0;
-  font-size: 20px;
+  padding-left: 0;
 }
 .jumbotron ul li {
   display: inline;
@@ -135,7 +138,6 @@ body, html {
 }
 .jumbotron ul li a:hover {
   color: #B3995D;
-  text-decoration: none;
 }
 .jumbotron a {
   display: block;
@@ -154,32 +156,27 @@ body, html {
   width: 100px;
   margin-bottom: 10px;
 }
-.jumbotron .learn-more {
+.jumbotron .learnMore {
   background-color: #DAD7CB;
-  width: 240px;
+  width: 230px;
 }
 
 #about img {
+  display: block;
   margin: 0 auto 0 auto;
   max-height: 270px;
 }
 
 .sectionTitle {
   font-size: 60px;
-  margin-top: 0;
-}
-
-.centered {
-  text-align: center;
 }
 
 .description {
   font-size: 22px;
 }
 
-.mdCentered75 {
-  margin: auto;
-  width: 75%;
+.w80 {
+  width: 80%;
 }
 
 .smShow {
@@ -187,6 +184,9 @@ body, html {
 }
 
 @media (max-width: 767px) {
+  .parallax {
+    background-attachment: scroll;
+  }
   .smCentered {
     text-align: center;
     margin-top: 20px;
@@ -208,14 +208,14 @@ body, html {
   color: #4D5357;
 }
 
-.blockquote-reverse {
-  border-color: #aaa;
-  margin: 0 auto;
+.blockquote {
+  border-right: 5px solid #aaa;
+  padding-right: 15px;
 }
-.blockquote-reverse p {
+.blockquote p {
   font-size: 22px;
 }
-.blockquote-reverse p i {
+.blockquote p i {
   color: #aaa;
   margin-right: 5px;
 }
@@ -226,12 +226,10 @@ body, html {
 
 .eduItem {
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .expItem {
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .hrAfter {
@@ -239,6 +237,7 @@ body, html {
 }
 
 .imgLogo {
+  display: block;
   border-radius: 3%;
   margin: 0 auto 10px auto;
   padding: 5%;
@@ -250,15 +249,18 @@ body, html {
   font-weight: bold;
   font-size: 17px;
 }
+.uniDescription {
+  font-size: 14px;
+}
 
 .companyTitle {
   font-weight: bold;
   font-size: 17px;
 }
-
-#footer {
-  text-align: center;
+.companyDescription {
+  font-size: 14px;
 }
+
 #footer p {
   font-size: 22px;
 }

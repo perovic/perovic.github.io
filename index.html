@@ -12,8 +12,7 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <meta property="og:title"       content="Boris Perović" />
   <meta property="og:type"        content="website" />
@@ -30,43 +29,48 @@
   <title>Boris Perović</title>
 
   <!-- CSS Imports -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <!-- <link rel="stylesheet" href="css/component.css"> -->
 </head>
 
 <body>
-
+    
   <!-- Header. Profile picture, name, tagline, resume download, and navbar. -->
   <header id="intro">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#intro" class="scroll"><img src="res/img/portrait.jpg" class="navbar-logo pull-left"/></a>
-          <a href="#intro" class="navbar-brand scroll">Boris Perović</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
 
-        <div id="myNavigation" class="collapse navbar-collapse" >
-          <ul class="nav navbar-nav navbar-right" >
-            <li><a href="#about" class="scroll">About Me</a></li>
-            <li><a href="#expertise" class="scroll">Expertise</a></li>
-            <li><a href="res/doc/Boris Perovic - Resume.pdf">Resume</a></li>
-            <!-- <li><a href="#projects" class="scroll">Side Projects</a></li> -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand scroll" href="#intro">
+          <img src="res/img/portrait.jpg">
+          Boris Perović
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#expertise">Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="res/doc/Boris Perovic - Resume.pdf">Resume</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- <div class="bg"></div> -->
-    <div class="jumbotron parallax">
-      <img src="res/img/portrait.jpg" class="img-responsive imageBordered"/>
+    <div class="jumbotron jumbotron-fluid parallax">
+      <img src="res/img/portrait.jpg" class="img-fluid imageBordered"/>
       <h1 class="jumbo-name">Boris Perović</h1>
 
-      <ul class="social-links">
+      <ul class="socialLinks">
         <li><a href="https://www.facebook.com/borisperovic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="https://www.linkedin.com/in/borisperovic" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         <li><a href="https://github.com/perovic" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -76,19 +80,19 @@
         <!-- <li><a href="https://medium.com/@borisperovic" target="_blank"><i class="fab fa-medium"></i></a></li> -->
       </ul>
       <a class="resume" href="res/doc/Boris Perovic - Resume.pdf">Resume</a>
-      <a href="#about" class="scroll learn-more">Learn more about me</a>
+      <a href="#about" class="scroll learnMore">Learn more about me</a>
     </div>
   </header>
+
 
   <!-- About. Short description, profile pic, experience -->
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
-          <img src="res/img/lhcb.jpg" class="img-responsive imageBordered"/>
+        <div class="col-md-3">
+          <img src="res/img/lhcb.jpg" class="img-fluid imageBordered"/>
         </div>
-
-        <div class="col-sm-9">
+        <div class="col-md-9">
           <h2 class="sectionTitle smCentered">About Me</h2>
           <p class="description">Hi! My name is Boris Perović, but you know that by now. I am a technological dreamer and a computer lover. In one word, my expertise are <i>systems</i>, while my general interests range from the theory of distributed computing and programming languages to space technologies, artificial intelligence and novel transportation methods. When focused on a problem, I might work very long hours alone, but I feel best around people and meeting new ones is one of my passions. I continuously try to motivate those around me to achieve great things and I hope that after leaving this website you will be inspired to do the same.</p>
         </div>
@@ -101,8 +105,8 @@
   <section class="inbetween">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <blockquote class="blockquote-reverse">
+        <div class="col-md-6 offset-md-3">
+          <blockquote class="blockquote text-right">
             <p><i class="fa fa-quote-left"></i> We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths. <i class="fa fa-quote-right"></i></p>
             <p class="quoter"> - Walt Disney</p>
           </blockquote>
@@ -119,80 +123,86 @@
       <div id="expertiseAboutMe">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="sectionTitle centered">Expertise and Experience</h2>
-            <div class="">
-              <div class="description mdCentered75 sm100">
-                <p>I have lived in three countries for now and attended three universities, each of which is amazing in its own right. Throughout my studies I worked on numerous academic projects and performed several internships. Interning at Net Link Solutions gave me an insight into the fast-moving domain of online commerce and entrepreneurship, but also got me engaged in the open-source world and communities around it. Working at CERN got me in touch with the boundaries of human physics knowledge and scientific computing, and allowed me to work with some of the best people in the field. I always try to remember the big picture, challenge myself and work on hard problems that have a real-world impact.</p>
-              </div>
-            </div>
+            <h2 class="sectionTitle text-center">Expertise and Experience</h2>
+            <p class="description mx-auto w80 sm100">I have lived in three countries for now and attended three universities, each of which is amazing in its own right. Throughout my studies I worked on numerous academic projects and performed several internships. Interning at Net Link Solutions gave me an insight into the fast-moving domain of online commerce and entrepreneurship, but also got me engaged in the open-source world and communities around it. Working at CERN got me in touch with the boundaries of human physics knowledge and scientific computing, and allowed me to work with some of the best people in the field. I always try to remember the big picture, challenge myself and work on hard problems that have a real-world impact.</p>
           </div>
         </div>
       </div>
 
       <div id="education">
         <div class="row">
-          <div class="col-sm-4 eduItem">
-            <div class="col-sm-4">
-              <div class="logoBox">
-                  <img class="img-responsive imgLogo" src="res/img/stanford-logo.png" />
+          <div class="col-md-4 eduItem">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="logoBox">
+                    <img class="img-fluid imgLogo" src="res/img/stanford-logo.png" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="uniTitle"><a href="https://www.stanford.edu/" target="_blank">Stanford University</a></h3>
+                <p class="uniDescription">Visiting Student Researcher, conducted Master thesis research in <a href="http://ppl.stanford.edu/" target="_blank">Pervasive Parallelism Laboratory</a>, under the supervision of <a href="https://profiles.stanford.edu/oyekunle-olukotun" target="_blank">Prof. Kunle Olukotun</a> and <a href="https://lampwww.epfl.ch/~odersky/" target="_blank">Prof. Martin Odersky</a>. Read my thesis <a href="res/doc/Boris Perovic - Master Thesis.pdf">here</a>!</p>
+                <hr class="hrAfter smShow">
               </div>
             </div>
-            <div class="col-sm-8">
-              <p class="uniTitle"><a href="https://www.stanford.edu/" target="_blank">Stanford University</a></p>
-              <p>Visiting Student Researcher, conducted Master thesis research in <a href="http://ppl.stanford.edu/" target="_blank">Pervasive Parallelism Laboratory</a>, under the supervision of <a href="https://profiles.stanford.edu/oyekunle-olukotun" target="_blank">Prof. Kunle Olukotun</a> and <a href="https://lampwww.epfl.ch/~odersky/" target="_blank">Prof. Martin Odersky</a>. Read my thesis <a href="res/doc/Boris Perovic - Master Thesis.pdf">here</a>!</p>
-              <hr class="hrAfter smShow">
+          </div>
+          <div class="col-md-4 eduItem">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="logoBox ">
+                  <img class="img-fluid imgLogo" src="res/img/epfl-logo_white.png" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="uniTitle"><a href="https://epfl.ch/" target="_blank">École Polytechnique Fédérale de Lausanne</a></h3>
+                <p class="uniDescription"><a href="https://ic.epfl.ch/computer-science/master" target="_blank">MSc in Computer Science</a>, specialized in Internet Computing. Attended courses in <a href="https://espace.epfl.ch/page-118543-en.html" target="_blank">Space Technologies</a> and <a href="https://cdm.epfl.ch/mte/minor" target="_blank">Management, Technology and Entrepreneurship</a> minors.</p>
+                <hr class="hrAfter smShow">
+              </div>
             </div>
           </div>
-          <div class="col-sm-4 eduItem">
-            <div class="col-sm-4">
-                <div class="logoBox">
-                    <img class="img-responsive imgLogo" src="res/img/epfl-logo_white.png" />
+          <div class="col-md-4 eduItem">
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="logoBox">
+                        <img class="img-fluid imgLogo" src="res/img/etf-logo.png" />
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-8">
-              <p class="uniTitle"><a href="https://epfl.ch/" target="_blank">École Polytechnique Fédérale de Lausanne</a></p>
-              <p><a href="https://ic.epfl.ch/computer-science/master" target="_blank">MSc in Computer Science</a>, specialized in Internet Computing. Attended courses in <a href="https://espace.epfl.ch/page-118543-en.html" target="_blank">Space Technologies</a> and <a href="https://cdm.epfl.ch/mte/minor" target="_blank">Management, Technology and Entrepreneurship</a> minors.</p>
-              <hr class="hrAfter smShow">
-            </div>
-          </div>
-          <div class="col-sm-4 eduItem">
-            <div class="col-sm-4">
-                <div class="logoBox">
-                    <img class="img-responsive imgLogo" src="res/img/etf-logo.png" />
+                <div class="col-md-8">
+                  <h3 class="uniTitle"><a href="http://www.bg.ac.rs/en/members/faculties/SEE.php" target="_blank">University of Belgrade</a></h3>
+                  <p class="uniDescription">BSc in Electrical Engineering and Computing, major in <a href="https://www.etf.bg.ac.rs/en/studies/bachelor-studies/electrical-and-computer-engineering/computer-engineering-and-information-theory" target="_blank">Computer Engineering and Information Theory</a>.</p>
+                  <hr class="hrAfter smShow">
                 </div>
-            </div>
-            <div class="col-sm-8">
-              <p class="uniTitle"><a href="http://www.bg.ac.rs/en/members/faculties/SEE.php" target="_blank">University of Belgrade</a></p>
-              <p>BSc in Electrical Engineering and Computing, major in <a href="https://www.etf.bg.ac.rs/en/studies/bachelor-studies/electrical-and-computer-engineering/computer-engineering-and-information-theory" target="_blank">Computer Engineering and Information Theory</a>.</p>
-              <hr class="hrAfter smShow">
-            </div>
+              </div>
           </div>
         </div>
       </div>
 
       <div id="experience">
         <div class="row">
-          <div class="col-sm-6 expItem">
-            <div class="col-sm-4">
-                <div class="logoBox">
-                  <img class="img-responsive imgLogo" src="res/img/cern-logo.png" />
-                </div>
-            </div>
-            <div class="col-sm-8">
-              <p class="companyTitle"><a href="https://home.cern/" target="_blank">CERN</a></p>
-              <p>Worked in <a href="https://ep-dep-sft.web.cern.ch/" target="_blank">EP-SFT group</a> on <a href="https://root.cern.ch/" target="_blank">ROOT Data Analysis Framework</a> and the C++ interpreter <a href="https://root.cern.ch/cling" target="_blank">Cling</a>. Implemented modular printing of values in the interactive mode. Supervised by <a href="https://cern.ch/axel" target="_blank">Axel Naumann</a> and <a href="https://ch.linkedin.com/in/danilo-piparo-86b1742a" target="_blank">Danilo Piparo</a>.</p>
-              <hr class="hrAfter smShow">
-            </div>
-          </div>
-          <div class="col-sm-6 expItem">
-            <div class="col-sm-4">
-              <div class="logoBox">
-                <img class="img-responsive imgLogo" src="res/img/net_link-logo.png" />
+          <div class="col-md-6 expItem">
+            <div class="row">
+              <div class="col-md-4">
+                  <div class="logoBox">
+                    <img class="img-fluid imgLogo" src="res/img/cern-logo.png" />
+                  </div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="companyTitle"><a href="https://home.cern/" target="_blank">CERN</a></h3>
+                <p class="companyDescription">Worked in <a href="https://ep-dep-sft.web.cern.ch/" target="_blank">EP-SFT group</a> on <a href="https://root.cern.ch/" target="_blank">ROOT Data Analysis Framework</a> and the C++ interpreter <a href="https://root.cern.ch/cling" target="_blank">Cling</a>. Implemented modular printing of values in the interactive mode. Supervised by <a href="https://cern.ch/axel" target="_blank">Axel Naumann</a> and <a href="https://ch.linkedin.com/in/danilo-piparo-86b1742a" target="_blank">Danilo Piparo</a>.</p>
+                <hr class="hrAfter smShow">
               </div>
             </div>
-            <div class="col-sm-8">
-              <p class="companyTitle">Net Link Solutions</p>
-              <p>Reworked <a href="http://plugins.netbeans.org/plugin/55435/easyuml" target="_blank">easyUML plugin</a> for NetBeans IDE, pushing it from 500 to more than 100000 downloads. Contributed to <a href="https://neuroph.sourceforge.net/" target="_blank">Neuroph Java Neural Network Framework</a>. Supervised by <a href="https://www.zoransevarac.com/" target="_blank">Prof. Zoran Ševarac</a>.</p>
+          </div>
+          <div class="col-md-6 expItem">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="logoBox">
+                  <img class="img-fluid imgLogo" src="res/img/net_link-logo.png" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="companyTitle">Net Link Solutions</h3>
+                <p class="companyDescription">Reworked <a href="http://plugins.netbeans.org/plugin/55435/easyuml" target="_blank">easyUML plugin</a> for NetBeans IDE, pushing it from 500 to more than 100000 downloads. Contributed to <a href="https://neuroph.sourceforge.net/" target="_blank">Neuroph Java Neural Network Framework</a>. Supervised by <a href="https://www.zoransevarac.com/" target="_blank">Prof. Zoran Ševarac</a>.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -205,8 +215,8 @@
   <section class="inbetween">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <blockquote class="blockquote-reverse">
+        <div class="col-md-6 offset-md-3">
+          <blockquote class="blockquote text-right">
             <p><i class="fa fa-quote-left"></i> Disneyland will never be completed. It will continue to grow as long as there is imagination left in the world. <i class="fa fa-quote-right"></i></p>
             <p class="quoter"> - Walt Disney</p>
           </blockquote>
@@ -251,9 +261,9 @@
 
   <!-- Footer: Social links -->
   <section id="footer">
-    <div class="container">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <ul class="social-links">
             <li><a href="https://www.facebook.com/borisperovic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://www.linkedin.com/in/borisperovic" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -270,11 +280,11 @@
   </section>
 
   <!-- JavaScript imports -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- <script src="js/grid.js"></script> -->
-  <script src="js/wow.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <!-- <script src="js/grid.js"></script> -->
 
 </body>
 </html>
