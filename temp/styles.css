@@ -88,9 +88,12 @@ header h1 {
 }
 .card .content {
   background-color: #FFFFFF;
-  box-shadow: 3px 3px 3px #eee;
+  box-shadow: 2px 2px 1px #ddd;
   margin: 20px 40px 20px 0;
-  padding: 20px;
+  padding: 22px 28px 50px 28px;
+}
+.card .content-red {
+  background-color: #FFC5C0;
 }
 .card .content-image {
   background-color: #FFFFFF;
@@ -107,7 +110,7 @@ header h1 {
 }
 .card p {
   font-family: serif;
-  font-size: 19px;
+  font-size: 18px;
 }
 .card a {
   color: #60C9DF;
