@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'note-tracker-icon-font';
+  src:  url('fonts/note-tracker-icon-font.eot?d4fzog');
+  src:  url('fonts/note-tracker-icon-font.eot?d4fzog#iefix') format('embedded-opentype'),
+    url('fonts/note-tracker-icon-font.ttf?d4fzog') format('truetype'),
+    url('fonts/note-tracker-icon-font.woff?d4fzog') format('woff'),
+    url('fonts/note-tracker-icon-font.svg?d4fzog#note-tracker-icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'note-tracker-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+  content: "\e905";
+}
+.icon-color:before {
+  content: "\e90c";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-all-notes:before {
+  content: "\e925";
+}
+.icon-notes:before {
+  content: "\e926";
+}
+.icon-trash:before {
+  content: "\e9ac";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-new-tab:before {
+  content: "\ea7e";
+}
+

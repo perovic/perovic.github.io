@@ -1,0 +1,123 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #F3F5F7;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1390px;
+  height: 100%;
+  margin: auto auto auto 201px;
+  display: flex;
+}
+
+.navigation {
+  width: 231px;
+  height: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.logo {
+  padding: 42px 0 0 0;
+  width: 83%;
+  margin: auto;
+}
+.list {
+  margin-top: 160px;
+  font-size: 22px;
+  text-align: left;
+  padding-left: 0;
+  list-style-type: none;
+}
+.item {
+  margin: 37px 0;
+  padding-left: 18px;
+  line-height: 1em;
+  border-left: 7px solid transparent;
+}
+.withBorder {
+  border-left: 7px solid #60C9DF;
+}
+.sub-item {
+  margin: 32px 0;
+  padding-left: 40px;
+}
+hr {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+
+.mainContainer {
+  height: 100%;
+  padding-left: 50px;
+  flex: 1;
+}
+header {
+  margin: 45px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.newNote {
+  width: 170px;
+  background-color: #4EBD65;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px #808080;
+}
+
+.notes {
+  margin-right: -50px;
+  color: #637178;
+}
+.card {
+  width: 33%;
+  float: left;
+}
+.card .content {
+  background-color: #FFFFFF;
+  box-shadow: 3px 3px 3px #eee;
+  margin: 20px 40px 20px 0;
+  padding: 20px;
+}
+.card .content-image {
+  background-color: #FFFFFF;
+  box-shadow: 3px 3px 3px #eee;
+  margin: 20px 40px 20px 0;
+  overflow: hidden;
+  font-size: 0;
+  /* padding: 20px; */
+}
+.card h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+.card p {
+  font-family: serif;
+  font-size: 19px;
+}
+.card a {
+  color: #60C9DF;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 18px;
+}
+.card .content-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 65px;
+}
